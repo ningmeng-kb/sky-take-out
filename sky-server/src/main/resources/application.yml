@@ -2,6 +2,10 @@ server:
   port: 8080
 
 spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
   profiles:
     active: dev
   main:
@@ -37,3 +41,14 @@ sky:
     admin-ttl: 7200000
     # 设置前端传递过来的令牌名称
     admin-token-name: token
+
+
+#git hub??????
+githubclub:
+  config:
+    username: ningmeng-kb #???
+    token: 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 #token?????
+    depository: image #???
+    message: 图片上传仓库 #??
+    domain: https://github.com/ningmeng-kb/image.git #cdn????
+
